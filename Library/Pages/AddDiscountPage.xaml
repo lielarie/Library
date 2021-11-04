@@ -1,0 +1,23 @@
+﻿<Page x:Class="Library.Pages.AddDiscountPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Library.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="285" d:DesignWidth="488"
+      Title="AddDiscountPage">
+
+    <Canvas Background="#FF07A55D" RenderTransformOrigin="0.642,0.506">
+        <TextBlock Canvas.Left="188" Canvas.Top="10" Text="Discounts" TextWrapping="Wrap" Height="31" Width="112" FontSize="23" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center"/>
+        <ComboBox x:Name="genreCombo" Canvas.Left="212" Canvas.Top="54" Width="209" Height="21"/>
+        <DatePicker x:Name="byPrintDate" Canvas.Left="212" Canvas.Top="94" Width="209" Height="28" FontSize="15"/>
+        <ComboBox x:Name="pubCombo" Canvas.Left="212" Canvas.Top="145" Width="209" Height="23"/>
+        <TextBox x:Name="newPriceText" Canvas.Left="128" Canvas.Top="206" Visibility="Visible" TextWrapping="Wrap" Width="232" Background="#6600FF3C" RenderTransformOrigin="0.498,0.591" Height="20" PreviewTextInput="newPriceText_PreviewTextInput"/>
+        <TextBlock Canvas.Left="112" Canvas.Top="52" Text="By Genre:" TextWrapping="Wrap" Height="26" FontSize="15"/>
+        <TextBlock Canvas.Left="112" Canvas.Top="98" Text="By Print Date:" TextWrapping="Wrap" Height="21" FontSize="15" Width="92"/>
+        <TextBlock Canvas.Left="112" Canvas.Top="145" Text="By Publisher:" TextWrapping="Wrap" Height="26" FontSize="15"/>
+        <TextBlock Canvas.Left="159" Canvas.Top="184" Text="Enter Discount By Percentage:" TextWrapping="Wrap" Height="17" FontWeight="Bold"/>
+        <Button x:Name="confirmDiscount" Content="Confirm" Canvas.Left="128" Canvas.Top="231" Width="232" FontWeight="Bold" FontSize="18" Foreground="#FF00FF05" Height="30" Background="Black" Click="confirmDiscount_Click"/>
+    </Canvas>
+</Page>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="Library.Views.Information"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library.Views"
+        mc:Ignorable="d"
+        Title="Information" Height="450" Width="800">
+    <Canvas>
+        <Canvas.Background>
+            <ImageBrush ImageSource="/assets/images/library.jpg"/>
+        </Canvas.Background>
+        <TextBlock x:Name="welcomeName" Canvas.Left="204" Canvas.Top="20" TextWrapping="Wrap" Height="57" Width="488" FontSize="30" FontWeight="Bold" Foreground="Black" TextAlignment="Center"/>
+        <Button x:Name="addItemB" Content="Add Item" Canvas.Left="10" Canvas.Top="10" Width="118" Background="#33FFFFFF" BorderBrush="White" Click="addItemB_Click" Height="86" FontSize="15" FontWeight="Bold"/>
+        <Button x:Name="searchItemB" Content="Search Item" Canvas.Left="10" Canvas.Top="101" Width="118" Background="#33FFFFFF" BorderBrush="White" Height="86" FontSize="15" FontWeight="Bold" Click="searchItemB_Click"/>
+        <Button x:Name="dailyRep" Content="Daily Report" Canvas.Left="10" Canvas.Top="192" Width="118" Background="#33FFFFFF" BorderBrush="White" Height="86" FontSize="15" FontWeight="Bold" Click="dailyRep_Click"/>
+        <Button x:Name="discountItem" Content="Add Discount" Canvas.Top="283" Width="118" Background="#33FFFFFF" BorderBrush="White" Height="86" FontSize="15" FontWeight="Bold" Canvas.Left="10" Click="discountItem_Click"/>
+        <Frame x:Name="Frame" Width="488" Height="285" Canvas.Left="204" Canvas.Top="84" NavigationUIVisibility="Hidden"/>
+    </Canvas>
+</Window>
